@@ -1,27 +1,72 @@
-# React + TypeScript + Vite
+# Tauri + React + TypeScript + Vite + Tailwind 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a setup to get React working in Vite, Tauri, Tailwind and some ESLint rules.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
 
-## Expanding the ESLint configuration
+You can find more detailed information about prerequisites [here](https://tauri.app/v1/guides/getting-started/prerequisites).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+#### For Windows:
+- Install `Microsoft Visual Studio C++ Build Tools` from [here](https://visualstudio.microsoft.com/visual-cpp-build-tools/). Select `C++ build tools` and `Windows 10 SDK` in the installer.
+- Download and run the `Evergreen Bootstrapper` from [here](https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section).
+- Install `Rust` with `rustup` from [here](https://www.rust-lang.org/tools/install).
 
-- Configure the top-level `parserOptions` property like this:
+#### For Linux(Debian/Ubuntu):
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+- Run the following commands in your terminal:
+
+   ```bash
+   sudo apt update
+   sudo apt install libwebkit2gtk-4.0-dev \
+      build-essential \
+      curl \
+      wget \
+      file \
+      libssl-dev \
+      libgtk-3-dev \
+      libayatana-appindicator3-dev \
+      librsvg2-dev
+   ```
+
+- To install Rust on Linux, open a terminal and enter the following command:
+
+   ```bash
+   curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+   ```
+
+#### For MacOS:
+
+- To install Rust on macOS, open a terminal and enter the following command:
+
+   ```bash
+   curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+   ```
+
+### Installation
+
+1. Clone the repo
+   ```bash
+   git clone https://github.com/emrecancorapci/tauri-react-typescript-tailwind
+   ```
+2. Install NPM packages
+   ```bash
+   pnpm install
+   ```
+
+## Usage
+
+### Development
+
+```bash
+pnpm t dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Build
+
+For more details about build, check [here](https://tauri.app/v1/guides/building).
+
+```bash
+pnpm t build
+```
