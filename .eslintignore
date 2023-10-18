@@ -17,8 +17,8 @@ env.d.ts
 
 ## Config files
 vite.config.ts
-tailwind.config.js
-postcss.config.js
+tailwind.config.cjs
+postcss.config.cjs
 
 ## Tauri
 src-tauri/
