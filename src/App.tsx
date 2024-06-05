@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import tauriLogo from './assets/tauri.svg';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,18 +14,8 @@ function App() {
           />
         </a>
         <a className="flex justify-center pe-4" href="https://react.dev" target="_blank" rel="noreferrer">
-          <img
-            src={reactLogo}
-            className="h-24 animate-[spin_3s_linear_infinite] p-6 transition-all duration-300 will-change-auto hover:drop-shadow-[0_0_2em_#61dafbaa]"
-            alt="React logo"
-          />
         </a>
         <a className="flex justify-center ps-8" href="https://tauri.app" target="_blank" rel="noreferrer">
-          <img
-            src={tauriLogo}
-            className="h-24 p-6 transition-all duration-300 will-change-auto hover:drop-shadow-[0_0_2em_#FFC131]"
-            alt="Vite logo"
-          />
         </a>
       </div>
       <h1 className="text-5xl">Vite + React + Tauri</h1>
