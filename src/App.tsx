@@ -1,4 +1,4 @@
-import Inputfield from "./GUI/Inputfield/Inputfield";
+import Inputfield from "./GUI/main/Inputfield";
 
 function App() {
 
