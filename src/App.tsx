@@ -10,3 +10,5 @@ function App() {
 }
 
 export default App;
+// westermann.de/webcodes/webcode={code}
+// codes.cornelsen.de/codes/webcode-ws/api/v1/searchAll?searchterm=9783061209735
